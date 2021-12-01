@@ -45,7 +45,7 @@ const flexspi_nor_config_t hyperflash_config = {
     .sectorSize         = 4u * 1024u,
     .blockSize          = 64u * 1024u,
     .isUniformBlockSize = false,
-#elif 1	//defined SEL_BOARD_K2500UI_HYPERFLASH || defined SEL_BOARD_NXPEVB_HYPERFLASH
+#elif defined SEL_BOARD_K2500UI_HYPERFLASH || defined SEL_BOARD_NXPEVB_HYPERFLASH
     .memConfig =
         {
             .tag                = FLEXSPI_CFG_BLK_TAG,
