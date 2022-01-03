@@ -17,7 +17,7 @@
     <booleanAttribute key="com.nxp.mcuxpresso.jlink.flash.halt.target" value="true"/>
     <booleanAttribute key="com.nxp.mcuxpresso.jlink.flash.reset.target" value="true"/>
     <stringAttribute key="com.nxp.mcuxpresso.segger.auto.startup" value="auto"/>
-    <stringAttribute key="com.nxp.mcuxpresso.segger.device" value="MCIMXRT1052"/>
+    <stringAttribute key="com.nxp.mcuxpresso.segger.device" value="MIMXRT1050_UFL_L0"/>
     <stringAttribute key="com.nxp.mcuxpresso.segger.endian" value="little"/>
     <stringAttribute key="com.nxp.mcuxpresso.segger.halt.target" value="-halt"/>
     <stringAttribute key="com.nxp.mcuxpresso.segger.if" value="SWD"/>
@@ -71,11 +71,12 @@
     <stringAttribute key="org.eclipse.cdt.dsf.gdb.TRACEPOINT_MODE" value="TP_NORMAL_ONLY"/>
     <booleanAttribute key="org.eclipse.cdt.dsf.gdb.UPDATE_THREADLIST_ON_SUSPEND" value="false"/>
     <intAttribute key="org.eclipse.cdt.launch.ATTR_BUILD_BEFORE_LAUNCH_ATTR" value="2"/>
+    <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="gdb"/>
     <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="remote"/>
-    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug_k2500UI_hyper\wildfire_rt1050_semc.axf"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Debug_k2500UI_qspi\wildfire_rt1050_semc.axf"/>
     <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="wildfire_rt1050_semc"/>
     <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
-    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="com.crt.advproject.config.exe.debug.831943868.409837420"/>
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="com.crt.advproject.config.exe.debug.831943868.409837420.770706166"/>
     <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
         <listEntry value="/wildfire_rt1050_semc"/>
     </listAttribute>

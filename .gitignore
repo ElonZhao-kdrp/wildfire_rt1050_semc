@@ -50,3 +50,6 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+/Debug_k2500UI_hyper/
+/Debug_wildFire_qspi/
+/Debug_k2500UI_qspi/

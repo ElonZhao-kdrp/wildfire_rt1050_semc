@@ -43,6 +43,13 @@ uint32_t sdram_readBuffer[SEMC_EXAMPLE_DATALEN];
 #define EXAMPLE_LED_GPIO     BOARD_USER_LED_GPIO
 #define EXAMPLE_LED_GPIO_PIN BOARD_USER_LED_GPIO_PIN
 
+#elif defined SEL_BOARD_K2500UI_QSPIFLASH
+
+#define HELLO_BOARD_STRING "K2500 UI BOARD with QSPI flash starting up"
+// LED define
+#define EXAMPLE_LED_GPIO     BOARD_USER_LED_GPIO
+#define EXAMPLE_LED_GPIO_PIN BOARD_USER_LED_GPIO_PIN
+
 #elif defined SEL_BOARD_WILDFIRE
 
 #define HELLO_BOARD_STRING "WILD FIRE BOARD with QSPI flash starting up"
@@ -88,7 +95,7 @@ status_t BOARD_InitSEMC(void)
     config.dqsMode = kSEMC_Loopbackdqspad; /* For more accurate timing. */
     SEMC_Init(SEMC, &config);
 
-#if defined SEL_BOARD_K2500UI_HYPERFLASH  || defined SEL_BOARD_WILDFIRE
+#if defined SEL_BOARD_K2500UI_HYPERFLASH  || defined SEL_BOARD_WILDFIRE  || defined SEL_BOARD_K2500UI_QSPIFLASH
 
     /* Configure SDRAM. */
     sdramconfig.csxPinMux           = kSEMC_MUXCSX0;
@@ -159,7 +166,7 @@ int main(void)
     CLOCK_InitSysPfd(kCLOCK_Pfd2, 29);
     /* Set semc clock to 163.86 MHz */
     CLOCK_SetMux(kCLOCK_SemcMux, 1);
-    CLOCK_SetDiv(kCLOCK_SemcDiv, 7);
+    CLOCK_SetDiv(kCLOCK_SemcDiv, 1);
     BOARD_InitDebugConsole();
 
     gpio_pin_config_t led_config = {kGPIO_DigitalOutput, 0, kGPIO_NoIntmode};
